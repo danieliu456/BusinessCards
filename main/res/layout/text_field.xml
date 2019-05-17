@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textFieldName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="24sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/textFieldInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Hint"
+        android:inputType="textPersonName"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/secondaryLightColor"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/textFieldCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:button="@drawable/swtich"
+            android:editable="false"
+            android:buttonTint="@drawable/checkbox_filter_tint"
+            android:padding="4dp"
+            android:textColor="@color/secondaryColor"
+            android:textColorHighlight="@color/secondaryColor"
+            android:textCursorDrawable="@color/secondaryColor"
+            android:translationX="0dp" />
+    </LinearLayout>
+
+</LinearLayout>
